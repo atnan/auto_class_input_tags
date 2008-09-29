@@ -1,0 +1,15 @@
+AutoClassInputTags
+==================
+
+Automatically adds a class to all <input /> tags, equal to the "type" attribute
+of the tag. So in the case of <input type="text" />, you would get
+<input type="text" class="text" />. This is useful for styling elements in
+mentally challenged browsers who have not implemented CSS attribute selectors.
+
+Example
+=======
+
+Since this monkey patches ActionView::Helpers::TagHelper#tag(), all Rails
+helpers which output tags should automatically gain the correct classes.
+
+Copyright (c) 2008 Nathan de Vries (http://www.atnan.com), released under the MIT license
